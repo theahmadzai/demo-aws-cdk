@@ -1,6 +1,7 @@
 const resolvers = {
   hello: () => 'world',
   world: () => 'hello',
+  changeHello: ({ world }) => `Hello changed to ${world}`,
 }
 
 exports.handler = async (event) => {
@@ -8,5 +9,5 @@ exports.handler = async (event) => {
     return null
   }
 
-  return resolvers[event.info.fieldName]()
+  return resolvers[event.info.fieldName](event?.arguments ?? undefined)
 }

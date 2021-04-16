@@ -2,3 +2,7 @@ type Query {
   hello: String!
   world: String!
 }
+
+type Mutation {
+  changeHello(world: String!): String!
+}
