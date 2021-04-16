@@ -15,7 +15,12 @@
     "jest": "^26.4.2"
   },
   "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.98.0",
+    "@aws-cdk/aws-cloudfront": "^1.98.0",
+    "@aws-cdk/aws-cloudfront-origins": "^1.98.0",
+    "@aws-cdk/aws-lambda": "^1.98.0",
     "@aws-cdk/aws-s3": "^1.92.0",
+    "@aws-cdk/aws-s3-deployment": "^1.98.0",
     "@aws-cdk/core": "1.92.0"
   }
 }
